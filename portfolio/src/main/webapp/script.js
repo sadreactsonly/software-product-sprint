@@ -15,14 +15,16 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomProject() {
+  const Projects =
+      ['Porject Title - Big Integer for c++ \nShort Description\nBuilt a c++ Library to handle integers greater than 64 bit.'
+	  , 'Porject Title - Text encryptor/decryptor \nShort Description\nBuilt a text encryptor/decryptor program using basic ciphers like vigenere cipher and rail fence cipher.'
+      , 'Porject Title - Java memory consumption monitor \nShort Description\nBuild a JAVA plugin to monitor the memory consumption of various SWF Activities in JVM'];
 
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const Project = Projects[Math.floor(Math.random() * Projects.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const ProjectContainer = document.getElementById('Project-container');
+  ProjectContainer.innerText = Project;
 }
